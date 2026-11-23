@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Three Months of Winter — Reimagining the Body (2026–2027)</title>
+  <title>冬三月 · The Three Months of Winter — Reimagining the Body (2026–2027)</title>
   <style>
     :root {
       --header-bg: #265842;
+      --gold-accent: #d8b86a;
       --bg-color: #f8f7f2;
       --card-bg: #ffffff;
       --text-main: #222222;
@@ -30,7 +31,7 @@
     header {
       background-color: var(--header-bg);
       color: #ffffff;
-      padding: 3.25rem 1.5rem 3rem;
+      padding: 3rem 1.5rem 3.25rem;
       text-align: center;
     }
 
@@ -38,22 +39,67 @@
       font-size: 0.9rem;
       letter-spacing: 0.08em;
       color: rgba(255, 255, 255, 0.88);
-      margin: 0 0 0.75rem;
+      margin: 0 0 0.65rem;
       text-transform: uppercase;
     }
 
     header h1 {
-      font-size: 2.6rem;
+      font-size: 2.5rem;
       font-weight: 700;
-      margin: 0 0 0.75rem;
+      margin: 0 0 0.6rem;
       letter-spacing: -0.01em;
     }
 
     .tagline {
-      font-size: 1.1rem;
+      font-size: 1.08rem;
       color: rgba(255, 255, 255, 0.92);
-      margin: 0;
+      margin: 0 auto 2rem;
       font-weight: 400;
+    }
+
+    .multilingual-frame {
+      max-width: 780px;
+      margin: 0 auto;
+      border: 1.5px solid var(--gold-accent);
+      border-radius: 6px;
+      padding: 1.35rem 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.1rem 1.5rem;
+      background: rgba(15, 42, 30, 0.25);
+    }
+
+    .lang-item {
+      padding: 0.4rem 0.5rem;
+    }
+
+    .lang-primary {
+      font-size: 1.45rem;
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 1.35;
+    }
+
+    .lang-chinese {
+      font-family: "KaiTi", "STKaiti", "Songti SC", "Noto Serif CJK SC", serif;
+      font-size: 1.7rem;
+      letter-spacing: 0.06em;
+    }
+
+    .lang-translit {
+      font-size: 0.95rem;
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.85);
+      margin-top: 0.15rem;
+    }
+
+    @media (max-width: 600px) {
+      .multilingual-frame {
+        grid-template-columns: 1fr;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
     }
 
     main {
@@ -205,11 +251,28 @@
     <p class="program-subtitle">Reimagining the Body: Seeing the Invisible, Hearing the Inaudible, 2026 – 2027</p>
     <h1>The Three Months of Winter</h1>
     <p class="tagline">Collaborative creative research by students and faculty</p>
+
+    <div class="multilingual-frame" aria-label="The Three Months of Winter in Chinese, English, Vietnamese, and Hindi">
+      <div class="lang-item">
+        <div class="lang-primary lang-chinese">冬三月，</div>
+        <div class="lang-translit">Dōng sān yuè,</div>
+      </div>
+      <div class="lang-item">
+        <div class="lang-primary">Three months of winter,</div>
+      </div>
+      <div class="lang-item">
+        <div class="lang-primary">Ba tháng mùa đông,</div>
+      </div>
+      <div class="lang-item">
+        <div class="lang-primary">शीत के तीन महीने,</div>
+        <div class="lang-translit">Śīt ke tīn mahīne,</div>
+      </div>
+    </div>
   </header>
 
   <main>
     <section class="intro-section">
-      <h2>The Three Months of Winter</h2>
+      <h2>冬三月 · The Three Months of Winter</h2>
       <p>
         Winter is a season rich with introspection, rest, mystery, community, anticipation, and transformation. For the International Colloquium, students and faculty are creating original works—individually and in groups—across visual arts, video, photography, music, poetry, and multimedia presentations.
       </p>
@@ -263,7 +326,7 @@
           <h3 class="work-title">Title of Work 2</h3>
           <p class="work-author">Creator Name(s) — Medium</p>
           <p class="artist-statement">
-            Paste the second artist's statement (approx. 50–100 words) here[cite: 1].
+            Paste the second artist's statement (approx. 50–100 words) here.
           </p>
         </div>
       </article>
@@ -277,7 +340,7 @@
           <h3 class="work-title">Title of Work 3</h3>
           <p class="work-author">Creator Name(s) — Medium</p>
           <p class="artist-statement">
-            Paste the third artist's statement (approx. 50–100 words) here[cite: 1].
+            Paste the third artist's statement (approx. 50–100 words) here.
           </p>
         </div>
       </article>
