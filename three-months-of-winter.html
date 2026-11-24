@@ -192,7 +192,20 @@
     .artist-statement {
       font-size: 0.95rem;
       color: var(--text-main);
-      margin: 0;
+      margin: 0 0 0.75rem;
+    }
+
+    .statement-link {
+      display: inline-block;
+      margin-top: auto;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .statement-link:hover {
+      text-decoration: underline;
     }
 
     .story-details {
@@ -320,21 +333,27 @@
       <!-- WORK 2 -->
       <article class="work-card">
         <div class="media-wrapper">
-          <img src="Media/winter-work-2.jpg" alt="Title of Work 2" />
+          <video controls preload="metadata" playsinline>
+            <source src="NovemberMozartReduced3.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div class="work-content">
-          <h3 class="work-title">Title of Work 2</h3>
-          <p class="work-author">Creator Name(s) — Medium</p>
+          <h3 class="work-title">Music as a Portal</h3>
+          <p class="work-author">Creator Name(s) — Video &amp; Music</p>
           <p class="artist-statement">
-            Paste the second artist's statement (approx. 50–100 words) here.
+            Add a short summary here or open the full artist statement document below.
           </p>
+          <a class="statement-link" href="Music-as-a-Portal-Artists-Statement.docx" download>
+            Download Artist Statement (DOCX) &rarr;
+          </a>
         </div>
       </article>
 
       <!-- WORK 3 -->
       <article class="work-card">
         <div class="media-wrapper">
-          <img src="Media/winter-work-3.jpg" alt="Title of Work 3" />
+          <img src="ClassQuYuan.jpg" alt="Class Qu Yuan" />
         </div>
         <div class="work-content">
           <h3 class="work-title">Title of Work 3</h3>
